@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <main>
+        <h1> Formularios + inputs + validaciones</h1>
+        <form action="">
+            <h2> Inputs</h2>
+            <label for="">
+                input tipo texto
+            <input type="text" placeholder="Ingrese algun texto">
+            <input type="text" disabled placeholder="Desabilitado">
+            </label>
+            <label for="">
+                Input Solo lectura
+                <input type="text" readonly placeholder="sollo puedes leer" >
+                <input type="submit">
+            </label>
+        </form>
+        <form>
+            <h2>Inputs</h2>
+            <label for="text1">Input tipo texto</label>
+            <input type="text" placeholder="Ingrese algun texto" id="text1" name="texto" />
+            <label>
+              Input (Desactivados)
+              <input type="text" placeholder="Ingrese algun texto" disabled />
+            </label>
+            <label>
+              Input (Solo lectura)
+              <input type="text" placeholder="Input de solo lectura" readonly value="Solo lectura" />
+            </label>
+            <label>
+              Input tipo number
+              <input type="number" placeholder="Edad Ej. 18" name="edad" />
+            </label>
+            <label>
+              Input tipo email
+              <input type="email" placeholder="Correo Ej. soyvictor@gmail.com" />
+            </label>
+            <label>
+              Input tipo range (Edad)
+              <input type="range" />
+            </label>
+            <label>
+              Input tipo tel
+              <input type="tel" placeholder="(51) 999999999" />
+            </label>
+            <label>
+              Input tipo url
+              <input type="url" placeholder="Sitio web" />
+            </label>
+            <label>
+              Input tipo password
+              <input type="password" placeholder="Password" />
+            </label>
+            <label>
+              Input tipo color
+              <input type="color" />
+            </label>
+            <label>
+              Input tipo search
+              <input type="search" />
+            </label>
+            <label>
+              Input tipo file (Seleccionar cualquier archivo)
+              <input type="file" />
+            </label>
+            <label>
+              Input tipo file (Seleccione solamente imagenes)
+              <input type="file" accept="image/*" />
+            </label>
+            <label>
+              Input tipo file (Seleccione solamente .jpg)
+              <input type="file" accept=".jpg, .jpeg" />
+            </label>
+            <label>
+              Input tipo file (Seleccione multiples archivos)
+              <input type="file" accept=".jpg, .jpeg" multiple />
+            </label>
+      
+            <input type="hidden" value="datos-ocultos" />
+      
+            <input type="submit" value="Guardar" />
+            <input type="reset" value="Limpiar" />
+          </form>
+      
+          <form>
+            <h2>Input tipo fecha</h2>
+      
+            <label>
+              Input tipo datetime-local (Fecha y hora)
+              <input type="datetime-local" name="fecha" />
+            </label>
+            <label>
+              Input tipo date (día)
+              <input type="date" name="dia" />
+            </label>
+            <label>
+              Input tipo week (semana)
+              <input type="week" name="semana" />
+            </label>
+            <label>
+              Input tipo week (mes)
+              <input type="month" name="mes" />
+            </label>
+      
+            <input type="submit" value="Guardar" />
+          </form>
+      
+          <form>
+            <h2>Textareas</h2>
+      
+            <label>
+              <textarea placeholder="Escribe una descripción sobre ti..." rows="6"></textarea>
+            </label>
+            <label>
+              <textarea placeholder="Escribe una descripción sobre ti..." rows="6" disabled></textarea>
+            </label>
+          </form>
+    </main>
+</body>
+</html>
